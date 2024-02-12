@@ -8,7 +8,7 @@ dotenv.config();
 
 const envVariables = z
   .object({
-    mapirApiKey: z.string(),
+    MAPIR_API_KEY: z.string(),
   })
   .parse(process.env);
 
@@ -16,7 +16,7 @@ describe('MapIR Api Module', () => {
   let mapirApi: MapirApi;
   beforeAll(() => {
     mapirApi = new MapirApi({
-      apiKey: envVariables.mapirApiKey,
+      apiKey: envVariables.MAPIR_API_KEY,
     });
   });
 
