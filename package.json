@@ -1,8 +1,9 @@
 {
   "name": "mapir-api",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Map IR api package",
-  "main": "./dist/mapir-api.js",
+  "main": "./dist/index.js",
+  "types": "'./dist/index.d.ts",
   "scripts": {
     "tsc:build": "tsc",
     "tsc:check": "tsc --noEmit",
