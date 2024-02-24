@@ -1,11 +1,25 @@
 {
   "name": "mapir-api",
-  "version": "0.5.0",
+  "version": "0.5.7",
   "description": "Map IR api package",
-  "main": "./dist/index.js",
-  "types": "'./dist/index.d.ts",
+  "main": "./dist/mapir-api.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/parsaghk/mapir-api"
+  },
+  "homepage": "https://github.com/parsaghk/mapir-api",
+  "keywords": [
+    "map ir",
+    "map.ir",
+    "map"
+  ],
+  "author": {
+    "name": "Parsa Ghadimkhani",
+    "email": "parsa.ghadimkhani@gmail.com"
+  },
+  "license": "ISC",
   "scripts": {
-    "tsc:build": "tsc",
+    "tsc:build": "rm -rf ./dist && tsc",
     "tsc:check": "tsc --noEmit",
     "lint:check": "eslint src/**/*.ts",
     "lint:fix": "eslint src/**/*.ts --fix",
@@ -13,17 +27,9 @@
     "format:fix": "prettier ./src --write",
     "test": "vitest"
   },
-  "keywords": [
-    "map ir",
-    "map.ir",
-    "map"
-  ],
-  "author": "Parsa Ghadimkhani",
-  "license": "ISC",
   "dependencies": {
     "axios": "^1.6.5",
     "dotenv": "^16.4.1",
-    "reflect-metadata": "^0.2.1",
     "zod": "^3.22.4"
   },
   "devDependencies": {

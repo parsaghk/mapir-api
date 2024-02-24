@@ -1,8 +1,8 @@
+node_modules
 .prettierignore
 .prettierrc
 .eslintrc.json
 .eslintignore
-node_modules
 .idea
 .env
 src

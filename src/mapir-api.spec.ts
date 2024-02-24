@@ -1,4 +1,4 @@
-import dotenv from 'dotenv';
+import * as dotenv from 'dotenv';
 import { beforeAll, describe, expect, test } from 'vitest';
 import { z } from 'zod';
 import { MapirApi } from './mapir-api';
